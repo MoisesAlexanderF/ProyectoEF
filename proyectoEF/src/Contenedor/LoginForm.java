@@ -1,3 +1,5 @@
+package Contenedor;
+
 
 
 import javax.swing.JOptionPane;
@@ -12,8 +14,8 @@ public class LoginForm extends javax.swing.JFrame {
     public LoginForm() {
         initComponents();
         this.setLocationRelativeTo(null);
-        txtUser.setText("emp01");
-        txtPass.setText("12345678");
+        txtUser.setText("root");
+        txtPass.setText("");
     }
 
     @SuppressWarnings("unchecked")
