@@ -28,6 +28,8 @@ public class FrmContenedor extends javax.swing.JFrame {
     private void initComponents() {
 
         DP_Workbench = new javax.swing.JDesktopPane();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         MBCont = new javax.swing.JMenuBar();
         MArch = new javax.swing.JMenu();
         MProc = new javax.swing.JMenu();
@@ -47,15 +49,34 @@ public class FrmContenedor extends javax.swing.JFrame {
 
         DP_Workbench.setBackground(new java.awt.Color(51, 0, 51));
 
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Moises Alexander Felipe Gaspar ");
+
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("9959-19-6269");
+
+        DP_Workbench.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        DP_Workbench.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
         javax.swing.GroupLayout DP_WorkbenchLayout = new javax.swing.GroupLayout(DP_Workbench);
         DP_Workbench.setLayout(DP_WorkbenchLayout);
         DP_WorkbenchLayout.setHorizontalGroup(
             DP_WorkbenchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 860, Short.MAX_VALUE)
+            .addGroup(DP_WorkbenchLayout.createSequentialGroup()
+                .addGap(53, 53, 53)
+                .addGroup(DP_WorkbenchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel1))
+                .addContainerGap(652, Short.MAX_VALUE))
         );
         DP_WorkbenchLayout.setVerticalGroup(
             DP_WorkbenchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 511, Short.MAX_VALUE)
+            .addGroup(DP_WorkbenchLayout.createSequentialGroup()
+                .addGap(117, 117, 117)
+                .addComponent(jLabel1)
+                .addGap(41, 41, 41)
+                .addComponent(jLabel2)
+                .addContainerGap(325, Short.MAX_VALUE))
         );
 
         MArch.setText("Archivo");
@@ -214,5 +235,7 @@ public class FrmContenedor extends javax.swing.JFrame {
     private javax.swing.JMenuItem MIVend;
     private javax.swing.JMenu MInf;
     private javax.swing.JMenu MProc;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
